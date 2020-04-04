@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-    background: url(../img/fourgrass.jpg);
+    background: url(../img/banner.jpg) no-repeat center;
     height:380px;
     width: 100%;
     
@@ -34,7 +34,7 @@ body {
 
 }
 .content-line-icon{
-    background:url(/img/icons_down.png) no-repeat #FFFF center;
+    background:url(../img/icons_down.png) no-repeat #FFFF center;
     border: 2px solid #559AC8;
     border-radius: 50%;
     width: 28px;
