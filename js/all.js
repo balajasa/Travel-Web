@@ -28,7 +28,6 @@ domSelect.addEventListener("change", selectChangeFun, false);
 domList.addEventListener("click", listFun, false); 
 
 
-
 //篩選地區
 function selectChangeFun(e) {
     var areaStr = "";
@@ -64,23 +63,25 @@ function updataList(areaStr) {
     var placeStr = "";
     for (var i = 0; i < data.length; i++) {
         if (data[i].Zone === areaStr) {
-        placeStr += `<div class="listbox">
-        <div class="card">
+        placeStr += `
+        <div class="col-md-6 mb-4">
+            <div class="card listbox">
+                <span class="img-title">${data[i].Name}</span>
+                <span class="img-area"> ${data[i].Zone}</span>
+            <div class="card-header bg-cover p-3" style="background:url(${data[i].Picture1})"></div>
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li class="card-opentime"><i class="far fa-clock mr-1"></i> ${data[i].Opentime}</li>
+                    <li class="card-address"><i class="fas fa-map-marker-alt mr-1"></i> ${data[i].Add}</li>
+                    <li class="card-tel"><i class="fas fa-mobile-alt mr-1"></i> ${data[i].Tel}</li>
+                    <span class="card-ticket"><i class="fas fa-tag"></i> ${data[i].Ticketinfo}</span>
+                </ul>
+            </div>
+            </div>
+        </div>
         
-            <span class="img-title">${data[i].Name}</span>
-            <span class="img-area"> ${data[i].Zone}</span>
-            <div class="card-img-cover bg-cover" style="background:url(${data[i].Picture1})"></div>
-        <div class="card-text">
-            <ul>
-                <li class="card-opentime"><i class="far fa-clock"></i> ${data[i].Opentime}</li>
-                <li class="card-address"><i class="fas fa-map-marker-alt"></i> ${data[i].Add}</li>
-                <li class="card-tel"><i class="fas fa-mobile-alt"></i> ${data[i].Tel}</li>
-                <span class="card-ticket"><i class="fas fa-tag"></i> ${data[i].Ticketinfo}</span>
-                
-            </ul>
-        </div>
-        </div>
-        </div>`;
+        
+        `;
     }
     // console.log(placeStr);
     title.innerHTML = areaStr;

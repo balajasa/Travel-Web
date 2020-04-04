@@ -1,142 +1,28 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-*,*:before,*:after {
-    box-sizing: border-box;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-body {
-    font-family: '微軟正黑體';
-    line-height: 1.5;
-}
-a {
-    text-decoration: none;
-}
-/*CSS Reset End*/
-.clearfix:before, .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
+	font-family: '微軟正黑體';
 }
 
-
-
-.wrap {
-    width: 1024px;
-    margin: 0 auto;
-}
 .header {
     background: url(../img/fourgrass.jpg);
     height:380px;
     width: 100%;
     
 }
-.header h1 {
-    color: #FFFF;
-    font-size: 40px;
-    text-align: center;
-    padding: 85px;
-}
+
 .areaselect {
-    font-family: '微軟正黑體';
     background-color: rgba(255, 255, 255 ,0.6);
     border:3px solid #FFFF;
     font-size: 18px;
     font-weight: bold;
-    padding: 8px;
     width: 40%;
-    position: relative;
-    left: 320px;
 }
 .hitoarea {
-    width: 800px;
-    height: 110px;
     position: relative;
-    bottom: -70px;
-    left: 10%;
-    background:#FFFF;
+    top: 120px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.20);
-    border-radius: 5px;
-    padding: 1em;
 }
-.hitoarea p {
-    font-size: 18px;
-    font-weight: bold;
-}
-.hotarealist {
-    float: left;
-    padding-left: 10px;
-}
-.hotarealist li {
-    float: left;
-    line-height: 30px;
-    background: #559AC8;
-    border-radius: 5px;
-    margin: 10px;
-}
-.hotarealist li a {
-    display: block;
-    color: white;
-    height: 40px;
-    padding: 5px 35px;
-}
-.hotarealist li a:hover{
-    background: rgba(0, 0, 0, 0.1);
-}
+
+
 .areacontent {
     margin-top: 120px;
 }
@@ -165,28 +51,15 @@ a {
     padding: 50px 0 20px 0;
     color: #8A82CC;
 }
+
 .listbox {
-    width: 480px;
-    /* height: 300px; */
-    background:#FFFF;
-    float: left;
     box-shadow: 0 0 6px rgba(0,0,0,0.2);
-    margin: 0 0 2% 2%;
 }
-.listbox {
-    position: relative;
-    font-weight: bold;
-    transition:all .2s;
-}
-.listbox:hover{
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2);
-    transform:  scale(1.1);
-}
-.card-img-cover {
+
+.card-header {
     width: 100%;
-    height: 175px;
-    border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);
+    height: 180px;
+
 }
 .bg-cover {
     background-size: cover;
@@ -207,9 +80,7 @@ a {
     color: #fff;
     font-size: 20px;
 }
-.card-text {
-    padding: 14px;
-}
+
 .card-opentime {
     color: #8A82CC;
 }
@@ -225,32 +96,4 @@ a {
     position: relative;
     float: right;
     bottom: 25px;
-}
-
-
-
-
-
-
-
-
-.footer {
-    width: 100%;
-    height: 80px;
-    background: lightseagreen;
-    text-align: center;
-    margin-top: 50px;
-}
-.footer h5 {
-    text-align: center;
-    padding: 8px;
-    color: #FFFF;
-    font-size: 20px;
-}
-.footer a {
-    color:#FFD366;
-    padding: 8px;
-}
-.footer a:visited {
-    color: #FFD366;
 }
